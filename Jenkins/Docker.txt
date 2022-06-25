@@ -1,0 +1,50 @@
+docker swarm init
+docker swarm --help
+docker node ls
+docker service create  -- name <> --type --replicas <> --constraint <node.labels.color==red>  <image>
+docker secret create <secretname> tokenfilke
+echo "abc" | docker secret create mysecret  -
+docker secret inspect <secretname>
+docker secret rm <secret name>
+docker network create -d  overlay my-overlay
+docker node update --label-add color=red <nodename/id>
+
+docker service scale http=4
+docker service update 
+docker service create --name --replicas -p --update-delay 
+docker rename <oldcont> <newcont>
+docker export <cont> -o  <filename>
+docker cp  <container>:<containerpath> <hostpath>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

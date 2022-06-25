@@ -1,0 +1,15 @@
+Plugins:
+deploy to container
+docker
+cloudbess
+docker build step
+nexus artifatory 
+
+sudo groupadd docker
+sudo usermod -aG docker jenkins
+
+
+Tomcat:
+Configure tomcat-users.xml
+
+ 

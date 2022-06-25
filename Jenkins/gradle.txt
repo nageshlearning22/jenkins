@@ -1,0 +1,8 @@
+gradle assemble (package)
+gradle test
+gradle -x test install ---> mvn install -DskipTests or mvn install -Dmaven.test.skip=true
+gradle build ---> mvn test package
+mvn deploy --> gradle jettyRun
+gradle libs or gradle jar ---> mvn jar
+gradle clean --> mvn clean
+gradle jettyRunWar--> mvn jettyRunWar
