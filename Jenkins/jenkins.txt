@@ -12,4 +12,8 @@ sudo usermod -aG docker jenkins
 Tomcat:
 Configure tomcat-users.xml
 
+JENKINS_USER=ansible 
+JENKINS_GROUP=ansible
+/etc/default
+
  
