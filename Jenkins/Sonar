@@ -1,0 +1,28 @@
+1.
+Login into Jenkins and install the SonarQube scanner plugin
+Go to Manage Jenkins –> Manage Plugins > Available –> SonarQube scanner
+And also add credentials plugins to store your credentials in Jenkins
+2. Configure SonarQube home path
+Go to Manage Jenkins –> Global Tool Configuration –> SonarQube Scanner
+Name : sonar_scanner
+SONAR_RUNNER_HOME: /opt/sonarqube (Your directory path of SonarQube)
+
+3. Now, Configure SonarQube server in Jenkins
+a)For integration, you need a SonarQube Server authentication token in Jenkins
+i. Log in into your SonarQube Server and find the following under the user bar
+Go to My Account –> Security –> Generate Token
+
+b)
+Go to Manage Jenkins –> Configure Systems –> SonarQube Servers
+Name: SonarQube
+Server URL: Not Required is the same as the default
+Server authentication token :
+i. Add server authentication token as following
+ii. Select it as a server authentication token
+
+4)Save it. Now, your SonarQube integration is completed with Jenkins. Create a job (Follow Jenkins – Continuous Integration System) to test SonarQube and generate a report of your project.
+
+Following is an example of Jenkins Pipeline integrated with SonarQube. The last stage “Quality Analysis” will perform SonarQube quality analysis execution.
+
+When you login into the SonarQube server using, you will get an analysis report of your code.
+
