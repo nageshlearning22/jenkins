@@ -16,4 +16,10 @@ JENKINS_USER=ansible
 JENKINS_GROUP=ansible
 /etc/default
 
+ansible plugin 
+Which ansible
+/use/ansible/bin 
+
+sudo passwd jenkins
+
  
