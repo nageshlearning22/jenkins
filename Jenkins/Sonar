@@ -1,3 +1,5 @@
+https://aspiresoftware.in/blog/intergrating-sonarqube-and-jenkins/
+
 1.
 Login into Jenkins and install the SonarQube scanner plugin
 Go to Manage Jenkins –> Manage Plugins > Available –> SonarQube scanner
